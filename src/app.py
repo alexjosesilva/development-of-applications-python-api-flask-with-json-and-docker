@@ -35,8 +35,8 @@ def atualizar(id):
             return dados
                    
     return []
-    
-    
+ 
+        
 #deletar um registro
 @app.route("/deletar/<id>",  methods = ['DELETE'])
 def deletar(id):
