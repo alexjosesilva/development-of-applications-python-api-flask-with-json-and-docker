@@ -10,10 +10,6 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      variables:
-        - name: PYTHONPATH
-          value: PYTHONPATH="${PYTHONPATH}:/pytest/"
-
       - name: checkout project
         uses: actions/checkout@v2
        
@@ -25,4 +21,4 @@ jobs:
 
       - name: Test with pytest
         run: |
-          pytest
+          python -m pytest
